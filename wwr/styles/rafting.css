@@ -33,7 +33,11 @@ footer {
     h1,
     h2 {
         font-family: var(--heading-font);
-        color: var(--primary-color)
+        color: var(--primary-color);
+    }
+
+    header nav a:hover {
+        color: var(--secondary-color);
     }
 
     nav,
@@ -68,9 +72,14 @@ footer {
         width: 100%;
         padding: 16px;
         text-align: center;
-        opacity: 1;
-        background-color: rgba(250, 204, 21, 0.85);
-        color: #fff
+        opacity: 0.8;
+        background-color: var(--accent1-color);
+        color: var(--primary-color);
+    }
+
+    .hero h1 {
+        background-color: var(--accent1-color);
+        /* you could use var(--accent1-color) */
     }
 
     .hero article {
