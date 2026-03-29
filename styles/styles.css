@@ -1,24 +1,33 @@
+:root {
+    --primary-color: #911763;
+    --secondary-color: #f5d0dd;
+    --background-color: #aa336a;
+    --box-shadow: lightpink;
+    --subheading-text-color: #543942;
+    --nav-text-color: whitesmoke;
+}
+
 nav {
-    background-color: #aa336a;
+    background-color: var(--background-color);
     padding: 10px;
 }
 
 nav a {
-    color: whitesmoke;
+    color: var(--nav-text-color);
     display: block;
     padding: 20px;
 }
 
 h1 {
-    color: #911763;
+    color: var(--primary-color);
 }
 
 main img {
     width: 150px;
     height: auto;
-    border: 1px solid #aa336a;
+    border: 1px solid var(--background-color);
     padding: 2px;
-    box-shadow: 0 0 30px lightpink;
+    box-shadow: 0 0 30px var(--box-shadow);
 }
 
 p {
@@ -34,8 +43,8 @@ aside {
     margin: 1rem;
     border: 1px solid rgb(0 0 0 / 0.2);
     padding: 1rem;
-    background-color: #f5d0dd;
-    color: #543942;
+    background-color: var(--secondary-color);
+    color: var(--subheading-text-color);
     text-align: center;
 }
 
