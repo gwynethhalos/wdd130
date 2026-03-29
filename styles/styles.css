@@ -1,3 +1,10 @@
+/* This is the default rule for this style sheet (CSS rule for the universal selector (wildcard)) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :root {
     --primary-color: #911763;
     --secondary-color: #f5d0dd;
@@ -22,12 +29,19 @@ h1 {
     color: var(--primary-color);
 }
 
+h2 {
+    position: absolute;
+    top: 30px;
+    left: 100px;
+}
+
 main img {
     width: 150px;
     height: auto;
     border: 1px solid var(--background-color);
     padding: 2px;
     box-shadow: 0 0 30px var(--box-shadow);
+    float: right;
 }
 
 p {
@@ -46,6 +60,7 @@ aside {
     background-color: var(--secondary-color);
     color: var(--subheading-text-color);
     text-align: center;
+    position: relative;
 }
 
 aside img {
@@ -57,4 +72,13 @@ footer {
     margin-top: 15px;
     border-top: 1px solid #000;
     text-align: center;
+}
+
+/* Class Selectors */
+.box {
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 0.2);
+    padding: 1rem;
+    background-color: var(--secondary-color);
+    color: var(--subheading-text-color));
 }
